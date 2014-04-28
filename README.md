@@ -98,7 +98,7 @@ Add as many subscribers as you’d like.
 
 ## Reference
 
-Track every Rails actions
+Track all Rails actions
 
 ```ruby
 class ApplicationController < ActionController::Base
