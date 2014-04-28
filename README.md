@@ -2,6 +2,14 @@
 
 :seedling: Simple, powerful event tracking for Rails
 
+Track events in:
+
+- JavaScript
+- Ruby
+- Native apps
+
+And store them wherever you’d like - your database, logs, external services, or all of them.
+
 ## Installation
 
 First, [add Ahoy](https://github.com/ankane/ahoy#installation).
