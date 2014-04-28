@@ -96,10 +96,25 @@ Ahoy.subscribers << LogSubscriber.new
 
 Add as many subscribers as you’d like.
 
+## Reference
+
+Track every Rails actions
+
+```ruby
+class ApplicationController < ActionController::Base
+  after_filter :track_action
+
+  protected
+
+  def track_action
+    ahoy.track "Hit action", request.filtered_parameters
+  end
+end
+```
+
 ## TODO
 
 - Ability to track JavaScript events automatically (button clicks, etc)
-- Ability to track Rails events automatically (actions, etc)
 
 ## Contributing
 
