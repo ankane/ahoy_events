@@ -1,12 +1,8 @@
 require "ahoy_events/version"
 require "ahoy_matey"
+require "ahoy_events/engine"
 require "ahoy/tracker"
 require "ahoy/subscribers/active_record"
-
-module AhoyEvents
-  class Engine < ::Rails::Engine
-  end
-end
 
 module Ahoy
   mattr_accessor :subscribers
