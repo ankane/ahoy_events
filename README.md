@@ -66,6 +66,7 @@ Create an `Ahoy::Event` model to store events.
 
 ```sh
 rails generate ahoy_events:active_record
+rake db:migrate
 ```
 
 ### Custom
