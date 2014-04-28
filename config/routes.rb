@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 end
 
 AhoyEvents::Engine.routes.draw do
-  resources :events, only: [:create]
+  scope module: "ahoy" do
+    resources :events, only: [:create]
+  end
 end
