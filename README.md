@@ -112,6 +112,12 @@ class ApplicationController < ActionController::Base
 end
 ```
 
+Use a different model [master]
+
+```ruby
+Ahoy.subscribers << Ahoy::Subscribers::ActiveRecord.new(model: Event)
+```
+
 ## TODO
 
 - Ability to track JavaScript events automatically (button clicks, etc)

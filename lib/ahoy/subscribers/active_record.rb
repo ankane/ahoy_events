@@ -2,8 +2,12 @@ module Ahoy
   module Subscribers
     class ActiveRecord
 
+      def initialize(options = {})
+        @model = options[:model] || Ahoy::Event
+      end
+
       def track(name, properties, options = {})
-        Ahoy::Event.create! do |e|
+        @model.create! do |e|
           e.visit = options[:visit]
           e.user = options[:user]
           e.name = name
