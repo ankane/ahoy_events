@@ -112,7 +112,7 @@ class ApplicationController < ActionController::Base
 end
 ```
 
-Use a different model [master]
+Use a different model
 
 ```ruby
 Ahoy.subscribers << Ahoy::Subscribers::ActiveRecord.new(model: Event)
