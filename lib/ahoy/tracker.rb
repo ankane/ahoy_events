@@ -9,12 +9,10 @@ module Ahoy
       # publish to each subscriber
       if @controller
         options[:controller] ||= @controller
-      end
-      if @controller.respond_to?(:current_user)
-        options[:user] ||= @controller.current_user
-      end
-      if @controller.respond_to?(:current_visit)
-        options[:visit] ||= @controller.current_visit
+        options[:user] ||= Ahoy.fetch_user(@controller)
+        if @controller.respond_to?(:current_visit)
+          options[:visit] ||= @controller.current_visit
+        end
       end
       options[:time] ||= Time.zone.now
 
