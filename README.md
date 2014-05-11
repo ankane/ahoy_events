@@ -39,6 +39,12 @@ There are three ways to track events.
 ahoy.track("Viewed book", {title: "The World is Flat"});
 ```
 
+or track all views and clicks with: [master]
+
+```ruby
+ahoy.trackAll();
+```
+
 #### Ruby
 
 ```ruby
@@ -118,9 +124,9 @@ Use a different model
 Ahoy.subscribers << Ahoy::Subscribers::ActiveRecord.new(model: Event)
 ```
 
-## TODO
+## History
 
-- Ability to track JavaScript events automatically (button clicks, etc)
+View the [changelog](https://github.com/ankane/ahoy_events/blob/master/CHANGELOG.md)
 
 ## Contributing
 
