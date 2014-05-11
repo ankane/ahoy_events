@@ -41,7 +41,7 @@ ahoy.track("Viewed book", {title: "The World is Flat"});
 
 or track all views and clicks with: [master]
 
-```ruby
+```javascript
 ahoy.trackAll();
 ```
 
@@ -103,6 +103,18 @@ Ahoy.subscribers << LogSubscriber.new
 Add as many subscribers as you’d like.
 
 ## Reference
+
+Track view [master]
+
+```javascript
+ahoy.trackView();
+```
+
+Track clicks [master]
+
+```javascript
+ahoy.trackClicks();
+```
 
 Track all Rails actions
 
