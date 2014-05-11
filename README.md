@@ -39,7 +39,7 @@ There are three ways to track events.
 ahoy.track("Viewed book", {title: "The World is Flat"});
 ```
 
-or track all views and clicks with: [master]
+or track all views and clicks with:
 
 ```javascript
 ahoy.trackAll();
@@ -104,13 +104,13 @@ Add as many subscribers as you’d like.
 
 ## Reference
 
-Track view [master]
+Track view
 
 ```javascript
 ahoy.trackView();
 ```
 
-Track clicks [master]
+Track clicks
 
 ```javascript
 ahoy.trackClicks();
