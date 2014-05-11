@@ -103,7 +103,7 @@
 
   // push events from queue
   try {
-    eventQueue = JSON.parse(ahoy.getCookie("ahoy_events") || []);
+    eventQueue = JSON.parse(ahoy.getCookie("ahoy_events") || "[]");
   } catch (e) {
     // do nothing
   }
