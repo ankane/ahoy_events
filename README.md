@@ -2,7 +2,7 @@
 
 :seedling: Simple, powerful event tracking for Rails
 
-This project has been merged into [Ahoy](https://github.com/ankane/ahoy_events)
+This project has been merged into [Ahoy](https://github.com/ankane/ahoy)
 
 ## Upgrading
 
